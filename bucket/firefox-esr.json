@@ -1,6 +1,6 @@
 {
     "version": "115.2.0",
-    "description": "Extended Support Release of Firefox: the popular open source web browser",
+    "description": "Extended Support Release of Firefox: the popular open source web browser. This variant makes sure the Scoop-ESR profile is used.",
     "homepage": "https://www.mozilla.org/en-US/firefox/organizations/",
     "license": "MPL-2.0",
     "notes": [
@@ -40,11 +40,6 @@
         [
             "firefox.exe",
             "Firefox ESR"
-        ],
-        [
-            "firefox.exe",
-            "Firefox ESR Profile Manager",
-            "-P"
         ]
     ],
     "persist": [

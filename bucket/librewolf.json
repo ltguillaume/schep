@@ -1,6 +1,6 @@
 {
     "version": "117.0-1",
-    "description": "A fork of Firefox, focused on privacy, security and freedom.",
+    "description": "A fork of Firefox, focused on privacy, security and freedom. This variant does not use the portable launcher and makes sure the Scoop profile is used by default.",
     "homepage": "https://librewolf.net/",
     "license": "MPL-2.0",
     "notes": [
