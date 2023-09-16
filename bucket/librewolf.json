@@ -16,12 +16,13 @@
     },
     "extract_dir": "librewolf-117.0.1-1\\LibreWolf",
     "post_install": [
-        "librewolf -CreateProfile \"Scoop $persist_dir\\profile\"",
         "$Addition = \"$persist_dir\\addition\"",
         "if (Test-Path $Addition) {",
         "  info 'Copying additional items...'",
         "  Copy-Item -Path $Addition\\* -Destination $dir -Force -Recurse -ErrorAction SilentlyContinue",
         "}",
+        "if ($cmd -ne 'install') { return }",
+        "librewolf -CreateProfile \"Scoop $persist_dir\\profile\"",
         "librewolf -P Scoop"
     ],
     "bin": [
