@@ -20,3 +20,10 @@ To make a new manifest contribution, please read the [Contributing
 Guide](https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md)
 and [App Manifests](https://github.com/ScoopInstaller/Scoop/wiki/App-Manifests)
 wiki page.
+
+## Update tip
+
+Create a new shortcut (.lnk file) with the following command to quickly update all apps and clean up Scoop:
+```
+cmd.exe /k scoop update update * && scoop cleanup * && scoop cache rm * && pause && exit
+```
