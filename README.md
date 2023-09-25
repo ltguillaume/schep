@@ -7,23 +7,21 @@ A bucket for [Scoop](https://scoop.sh) with custom(ized) manifests for increased
 
 ## How do I install these manifests?
 
-After manifests have been committed and pushed, run the following:
-
+To add this bucket to Scoop, run the following:
 ```pwsh
 scoop bucket add schep https://github.com/ltguillaume/schep
+```
+
+Then, you can install an application via:
+```pwsh
 scoop install schep/<manifestname>
 ```
 
-## How do I contribute new manifests?
-
-To make a new manifest contribution, please read the [Contributing
-Guide](https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md)
-and [App Manifests](https://github.com/ScoopInstaller/Scoop/wiki/App-Manifests)
-wiki page.
+This bucket is also indexed at https://scoop.sh.
 
 ## Update tip
 
 Create a new shortcut (.lnk file) with the following command to quickly update all apps and clean up Scoop:
-```
+```cmd
 cmd.exe /k scoop update update * && scoop cleanup * && scoop cache rm * && pause && exit
 ```
