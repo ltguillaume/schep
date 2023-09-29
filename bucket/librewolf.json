@@ -1,20 +1,20 @@
 {
-    "version": "117.0.1-1",
+    "version": "118.0.1-1",
     "description": "A fork of Firefox, focused on privacy, security and freedom. This variant does not use the portable launcher and makes sure the Scoop profile is used by default.",
     "homepage": "https://librewolf.net/",
     "license": "MPL-2.0",
     "notes": "After installation, LibreWolf will be run to automatically set up the right default profile.",
     "architecture": {
         "64bit": {
-            "url": "https://gitlab.com/api/v4/projects/44042130/packages/generic/librewolf/117.0.1-1/librewolf-117.0.1-1-windows-x86_64-portable.zip",
-            "hash": "3aac53d77e7776cde7a918899852664de0d73d3d129be14fabc57144818543d4"
+            "url": "https://gitlab.com/api/v4/projects/44042130/packages/generic/librewolf/118.0.1-1/librewolf-118.0.1-1-windows-x86_64-portable.zip",
+            "hash": "983f6ea086e2d42dad529b19e7dd7f58d9c9481b56d8c598b6725a5453cd1dd6"
         },
         "32bit": {
-            "url": "https://gitlab.com/api/v4/projects/44042130/packages/generic/librewolf/117.0.1-1/librewolf-117.0.1-1-windows-i686-portable.zip",
-            "hash": "0861901c111caf07c0d3558e7c13f70f9ba6107ab53dab8d776a830e8d94d2c3"
+            "url": "https://gitlab.com/api/v4/projects/44042130/packages/generic/librewolf/118.0.1-1/librewolf-118.0.1-1-windows-i686-portable.zip",
+            "hash": "307795d9cf91ba23baba847c37efc719e478252ab0ff9916fbac58e0ec044747"
         }
     },
-    "extract_dir": "librewolf-117.0.1-1\\LibreWolf",
+    "extract_dir": "librewolf-118.0.1-1\\LibreWolf",
     "post_install": [
         "$Addition = \"$persist_dir\\addition\"",
         "if (Test-Path $Addition) {",
