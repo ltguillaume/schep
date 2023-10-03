@@ -1,13 +1,13 @@
 {
     "version": "115.3.1-bb14",
-    "description": "A a fine-tuned version of Mozilla Thunderbird with new features, bug fixes and telemetry turned off. This variant makes sure the Scoop profile is used by default. Dutch version.",
+    "description": "A a fine-tuned version of Mozilla Thunderbird with new features, bug fixes and telemetry turned off. This variant makes sure the Scoop profile is used by default.",
     "homepage": "https://www.betterbird.eu",
     "license": "MPL-2.0",
-    "notes": "After installation, Betterbird will be run to automatically set up the right default profile. The manifest \"schep/betterbird-future\" is now the same as \"schep/betterbird\", since v115 became the stable release.",
+    "notes": "After installation, Betterbird will be run to automatically set up the right default profile.",
     "architecture": {
         "64bit": {
-            "url": "https://www.betterbird.eu/downloads/WindowsInstaller/betterbird-115.3.1-bb14.nl.win64.installer.exe#/dl.7z",
-            "hash": "77e5485b93635790faed2e81047360aa182a778974644e79f0c4f0b3c24b85b9"
+            "url": "https://www.betterbird.eu/downloads/WindowsInstaller/betterbird-115.3.1-bb14.en-US.win64.installer.exe#/dl.7z",
+            "hash": "e889e68a22623d7012a4b913b441548205093d74f2e120a42ff7c309df6cd369"
         }
     },
     "extract_dir": "core",
@@ -39,10 +39,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://www.betterbird.eu/downloads/WindowsInstaller/betterbird-$version.nl.win64.installer.exe#/dl.7z",
+                "url": "https://www.betterbird.eu/downloads/WindowsInstaller/betterbird-$version.en-US.win64.installer.exe#/dl.7z",
                 "hash": {
                     "url": "https://www.betterbird.eu/downloads/sha256-115.txt",
-                    "regex": "$sha256 betterbird-$version.nl.win64.installer.exe"
+                    "regex": "$sha256 betterbird-$version.en-US.win64.installer.exe"
                 }
             }
         }
