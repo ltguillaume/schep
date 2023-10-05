@@ -21,8 +21,9 @@
         "  info 'Copying additional items...'",
         "  Copy-Item -Path $Addition\\* -Destination $dir -Force -Recurse -ErrorAction SilentlyContinue",
         "}",
+        "if ($cmd -ne 'install') { return }",
         "librewolf -CreateProfile \"Scoop $persist_dir\\profile\"",
-        "librewolf -P Scoop"
+        "start -NoNewWindow librewolf -ArgumentList '-P Scoop'"
     ],
     "bin": [
         [
