@@ -3,7 +3,7 @@
     "description": "A fork of Firefox, focused on privacy, security and freedom. This variant does not use the portable launcher and makes sure the Scoop profile is used by default.",
     "homepage": "https://librewolf.net/",
     "license": "MPL-2.0",
-    "notes": "After installation, LibreWolf will be run to automatically set up the right default profile.",
+    "notes": "After installation, the profile manager will be run to choose the right default profile.",
     "architecture": {
         "64bit": {
             "url": "https://gitlab.com/api/v4/projects/44042130/packages/generic/librewolf/118.0.1-1/librewolf-118.0.1-1-windows-x86_64-portable.zip",
@@ -21,9 +21,8 @@
         "  info 'Copying additional items...'",
         "  Copy-Item -Path $Addition\\* -Destination $dir -Force -Recurse -ErrorAction SilentlyContinue",
         "}",
-        "if ($cmd -ne 'install') { return }",
         "librewolf -CreateProfile \"Scoop $persist_dir\\profile\"",
-        "start -NoNewWindow librewolf -ArgumentList '-P Scoop'"
+        "start -NoNewWindow librewolf -ArgumentList '-P'"
     ],
     "bin": [
         [
