@@ -1,12 +1,12 @@
 {
-    "version": "1.8.3",
+    "version": "1.8.4",
     "description": "A fully-featured XMPP client",
     "homepage": "https://gajim.org",
     "license": "GPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://gajim.org/downloads/1.8/Gajim-Portable-1.8.3-64bit.exe",
-            "hash": "1a5dedc9ddd309d9c11af9c50983102007d1c147ccba819ebd3ac3278b2c4581"
+            "url": "https://gajim.org/downloads/1.8/Gajim-Portable-1.8.4-64bit.exe#/gajim-portable.exe",
+            "hash": "70a005ef8037f24470eb35468c7056dcb094a4f7204568dd5e7a6fb0f9dd640d"
         }
     },
     "bin": "bin/Gajim.exe",
@@ -18,10 +18,8 @@
     ],
     "persist": "UserData",
     "installer": {
-        "args": [
-            "/S",
-            "/D=$dir"
-        ]
+        "file": "gajim-portable.exe",
+        "args": "\" /S /LANG=en /D=$dir \""
     },
     "checkver": {
         "url": "https://dev.gajim.org/api/v4/projects/30/releases/permalink/latest",
