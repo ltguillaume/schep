@@ -23,5 +23,5 @@ This bucket is also indexed at https://scoop.sh.
 
 Create a new shortcut (.lnk file) with the following command to quickly update all apps and clean up Scoop:
 ```cmd
-cmd.exe /k scoop update update * && scoop cleanup * && scoop cache rm * && pause && exit
+cmd.exe /k scoop update && scoop update * && scoop cleanup * && scoop cache rm * && pause && exit
 ```
