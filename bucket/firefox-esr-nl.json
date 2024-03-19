@@ -1,21 +1,21 @@
 {
-    "version": "115.8.0",
+    "version": "115.9.0",
     "description": "Extended Support Release of Firefox: the popular open source web browser. This variant makes sure the Scoop-ESR profile is used. Dutch version.",
     "homepage": "https://www.mozilla.org/nl/firefox/organizations/",
     "license": "MPL-2.0",
     "notes": "After installation, the profile manager will be run to choose the right default profile.",
     "architecture": {
         "64bit": {
-            "url": "https://archive.mozilla.org/pub/firefox/releases/115.8.0esr/win64/nl/Firefox%20Setup%20115.8.0esr.exe#/dl.7z",
-            "hash": "sha512:8e3a8fd23acf701413b4b80f6cf44f53887839c91edd383abc3d8546e583e3641e0371ecf24f59ae769c757014c209b6b175644134ae3d7ddd95ce4e1d7a44a6"
+            "url": "https://archive.mozilla.org/pub/firefox/releases/115.9.0esr/win64/nl/Firefox%20Setup%20115.9.0esr.exe#/dl.7z",
+            "hash": "sha512:034487320116d2a31f159bb6bbe096eef29e9f441dba77bdda1b8b538d2a0bec1f43fa83a7a4029287df0f99312609dffef13a3d9292f548d181b1effe009583"
         },
         "32bit": {
-            "url": "https://archive.mozilla.org/pub/firefox/releases/115.8.0esr/win32/nl/Firefox%20Setup%20115.8.0esr.exe#/dl.7z",
-            "hash": "sha512:a966e9999eb8d337df38c3cc1c593a667f44702f1df0c45e0437267febeadd6da3215e9bb31b3c8846619e6aef965afaba1d88a573b38b3e87e5a3bec4ef69f8"
+            "url": "https://archive.mozilla.org/pub/firefox/releases/115.9.0esr/win32/nl/Firefox%20Setup%20115.9.0esr.exe#/dl.7z",
+            "hash": "sha512:6981a38599ae7396b924670e1887eb3e93b09f65ad24cee50dc238f9b3c4fd139762a58199e5938f7350d2f2c10ab727c73d64bcdad3cde8333b43004eb552d7"
         },
         "arm64": {
-            "url": "https://archive.mozilla.org/pub/firefox/releases/115.8.0esr/win64-aarch64/nl/Firefox%20Setup%20115.8.0esr.exe#/dl.7z",
-            "hash": "sha512:3b04ef4750151133a176be36aa66a58bd0691985e1a7cafe869d2b5e651f789acfe15f0837c0a8e48e5abefc50d9f159671452d900dfebe3e2346a2419c4649e"
+            "url": "https://archive.mozilla.org/pub/firefox/releases/115.9.0esr/win64-aarch64/nl/Firefox%20Setup%20115.9.0esr.exe#/dl.7z",
+            "hash": "sha512:b870eb4e2753f6a8b99be0d3507317bfb0ffce286737fa3964834bd25eb2ce9821b11f0acf366ec6c4d41bead1090bab3dd39b5150c8facf9cd1060724903997"
         }
     },
     "extract_dir": "core",
