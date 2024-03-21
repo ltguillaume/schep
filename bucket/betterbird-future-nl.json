@@ -6,8 +6,8 @@
     "notes": "After installation, the profile manager will be run to choose the right default profile. The manifest \"schep/betterbird-future\" is now the same as \"schep/betterbird\", since v115 became the stable release.",
     "architecture": {
         "64bit": {
-            "url": "https://www.betterbird.eu/downloads/WindowsInstaller/betterbird-115.9.0-bb26.nl.win64.installer.exe#/dl.7z",
-            "hash": "fa0b9c9359120f0cc283ad0e25743b2cea223bd911c1f8d269574719cd1e8fbb"
+            "url": "https://www.betterbird.eu/downloads/WindowsInstaller/betterbird-115.9.0-bb26-build2.nl.win64.installer.exe#/dl.7z",
+            "hash": "2952387f6245b83422497591d3730bcc4f0bb8313896a21864fcca83ef9e0d7b"
         }
     },
     "extract_dir": "core",
