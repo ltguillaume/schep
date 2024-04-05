@@ -1,0 +1,26 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\SOFTWARE\RegisteredApplications]
+"$name Scoop"="SOFTWARE\\$name Scoop\\Capabilities"
+
+[HKEY_CURRENT_USER\SOFTWARE\$name Scoop\Capabilities]
+"ApplicationDescription"="A fully-featured XMPP client"
+"ApplicationIcon"="$app,0"
+"ApplicationName"="$name (Scoop)"
+[HKEY_CURRENT_USER\SOFTWARE\$name Scoop\Capabilities\URLAssociations]
+"xmpp"="Scoop.$name.xmpp"
+
+; Protocols
+[HKEY_CURRENT_USER\SOFTWARE\Classes\xmpp]
+"URL Protocol"=""
+
+; Handlers
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Scoop.$name.xmpp]
+@="URL:XMPP Protocol"
+"EditFlags"=dword:00000002
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Scoop.$name.xmpp\DefaultIcon]
+@="$app,0"
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Scoop.$name.xmpp\shell\open]
+"FriendlyAppName"="$name (Scoop)"
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Scoop.$name.xmpp\shell\open\command]
+@="\"$app\" \"%1\""
