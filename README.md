@@ -1,4 +1,4 @@
-# Scoop Apps by ltGuillaume
+# Scoop Apps by ltguillaume
 
 <!-- Uncomment the following line after replacing placeholders -->
 [![Tests](https://github.com/ltguillaume/schep/actions/workflows/ci.yml/badge.svg)](https://github.com/ltguillaume/schep/actions/workflows/ci.yml) [![Excavator](https://github.com/ltguillaume/schep/actions/workflows/excavator.yml/badge.svg)](https://github.com/ltguillaume/schep/actions/workflows/excavator.yml)
