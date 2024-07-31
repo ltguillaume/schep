@@ -5,7 +5,7 @@
     "license": "GPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://gajim.org/downloads/1.9/Gajim-Portable-1.9.3-64bit.exe",
+            "url": "https://gajim.org/downloads/1.9/Gajim-Portable-1.9.3-64bit.exe#/gajim-portable.exe",
             "hash": "7374aa70ea0944153d0ad13169e3b6f55a19bbc96000522b486c2ab98118fe5b"
         }
     },
@@ -28,7 +28,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://gajim.org/downloads/$majorVersion.$minorVersion/Gajim-Portable-$version-64bit.exe"
+                "url": "https://gajim.org/downloads/$majorVersion.$minorVersion/Gajim-Portable-$version-64bit.exe#/gajim-portable.exe"
             }
         }
     }
