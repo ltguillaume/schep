@@ -22,7 +22,7 @@
         "  Copy-Item -Path $Addition\\* -Destination $dir -Force -Recurse -ErrorAction SilentlyContinue",
         "}",
         "if (!(Test-Path \"$persist_dir\\profile\\times.json\")) {",
-        "	librewolf.exe -CreateProfile \"Scoop $persist_dir\\profile\"",
+        "    librewolf.exe -CreateProfile \"Scoop $persist_dir\\profile\"",
         "}",
         "Start-Process -WorkingDirectory $dir -FilePath librewolf.exe -ArgumentList '-P'"
     ],
