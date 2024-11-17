@@ -1,4 +1,5 @@
 {
+    "##": "ltguillaume/schep",
     "version": "132.0.2-1",
     "description": "A fork of Firefox, focused on privacy, security and freedom. This variant does not use the portable launcher and makes sure the Scoop profile is used by default.",
     "homepage": "https://librewolf.net/",

@@ -1,4 +1,5 @@
 {
+    "##": "ltguillaume/schep",
     "version": "1.9.5",
     "description": "A fully-featured XMPP client. Fully portable version.",
     "homepage": "https://gajim.org",
