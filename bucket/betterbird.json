@@ -36,7 +36,7 @@
     ],
     "checkver": {
         "url": "https://betterbird.eu/downloads/sha256-115.txt",
-        "regex": "betterbird-([\\d.]+-bb[^\\.]+)\\.en-US"
+        "regex": "betterbird-(.{1,32}).en-US.win64.installer.exe"
     },
     "autoupdate": {
         "architecture": {
