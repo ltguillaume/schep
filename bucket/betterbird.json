@@ -1,14 +1,14 @@
 {
     "##": "ltguillaume/schep",
-    "version": "115.18.0-bb36",
+    "version": "115.18.0-bb36-build2",
     "description": "A a fine-tuned version of Mozilla Thunderbird with new features, bug fixes and telemetry turned off. This variant makes sure the Scoop profile is used by default.",
     "homepage": "https://www.betterbird.eu",
     "license": "MPL-2.0",
     "notes": "After installation, the profile manager will be run to choose the right default profile.",
     "architecture": {
         "64bit": {
-            "url": "https://www.betterbird.eu/downloads/WindowsInstaller/betterbird-115.18.0-bb36.en-US.win64.installer.exe#/dl.7z",
-            "hash": "ba2eb309c2469c0d09db32bdd6522b95ef03636c87b542e067fca05b50f938b0"
+            "url": "https://www.betterbird.eu/downloads/WindowsInstaller/betterbird-115.18.0-bb36-build2.en-US.win64.installer.exe#/dl.7z",
+            "hash": "024845682f55444bda9a168f71bb170db2caf1170f2a833207866b5c53c9a85e"
         }
     },
     "extract_dir": "core",
