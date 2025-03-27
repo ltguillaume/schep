@@ -1,22 +1,22 @@
 {
     "##": "ltguillaume/schep",
-    "version": "128.8.0",
+    "version": "128.8.1",
     "description": "Extended Support Release of Firefox: the popular open source web browser. This variant makes sure the Scoop-ESR profile is used. Dutch version.",
     "homepage": "https://www.mozilla.org/nl/firefox/organizations/",
     "license": "MPL-2.0",
     "notes": "After installation, the profile manager will be run to choose the right default profile.",
     "architecture": {
         "64bit": {
-            "url": "https://archive.mozilla.org/pub/firefox/releases/128.8.0esr/win64/nl/Firefox%20Setup%20128.8.0esr.exe#/dl.7z",
-            "hash": "sha512:7d42d48cbb3f9c2f8fc8925109a27c27c4e8a11471b757159b9fa57d7903d750eeb5c4dd53905f441d46fc1a68b0b3a87435fe5c3b53dcea5776fe15017becf7"
+            "url": "https://archive.mozilla.org/pub/firefox/releases/128.8.1esr/win64/nl/Firefox%20Setup%20128.8.1esr.exe#/dl.7z",
+            "hash": "sha512:0df9ba61f9b5cc4510e887f2a68ae6d23653e7f3fb1253d098825a971c34780ac335c0a4d9946ce797e3a616066f27bbf3c8ab30d02741f606aa960a80bf4e97"
         },
         "32bit": {
-            "url": "https://archive.mozilla.org/pub/firefox/releases/128.8.0esr/win32/nl/Firefox%20Setup%20128.8.0esr.exe#/dl.7z",
-            "hash": "sha512:8462a25c180306686d3431016e8e0e7cd2fc53bdee87ea34f9eeacc7310aa1b14b1b1750eb145e630054d3fe79e26c468ee08b710162d9a66897dbf51db60ae2"
+            "url": "https://archive.mozilla.org/pub/firefox/releases/128.8.1esr/win32/nl/Firefox%20Setup%20128.8.1esr.exe#/dl.7z",
+            "hash": "sha512:670d0cc5ad390b148a9e22b205625a81cbcd15d20143dbd9b2c527ec9e9ff4957ec59318dbf831950d67de69c2a3eb14437767b3b887b0633b4c80e50a7afe9e"
         },
         "arm64": {
-            "url": "https://archive.mozilla.org/pub/firefox/releases/128.8.0esr/win64-aarch64/nl/Firefox%20Setup%20128.8.0esr.exe#/dl.7z",
-            "hash": "sha512:8d7d00fc01d3d4d8cdfcbf29ff03a02be0843844f2d46da4bb69f26fb9b9405adf9dde9015636acb89efa27149e1bd1cf5d5ed07f9b8cf9ac1edd20ef6cdcac3"
+            "url": "https://archive.mozilla.org/pub/firefox/releases/128.8.1esr/win64-aarch64/nl/Firefox%20Setup%20128.8.1esr.exe#/dl.7z",
+            "hash": "sha512:57cf75a49d1ff9b16dc7b55f6df01526d920998c8a1957bd5c4f2fa85f97193d54c4d805d1e04d34d99377b543cfd216b277a24c9dd0225e1e7b2c3b1d18e7d4"
         }
     },
     "extract_dir": "core",
