@@ -1,13 +1,13 @@
 {
     "##": "ltguillaume/schep",
-    "version": "v6.3.1",
+    "version": "v6.3.2",
     "description": "Private and secure chat and applications platform. Desktop GUI app.",
     "homepage": "https://simplex.chat",
     "license": "AGPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/simplex-chat/simplex-chat/releases/download/v6.3.1/simplex-desktop-windows-x86_64.msi",
-            "hash": "fa298bdcfe88decfdfcb35e66101854595070beaab50dd50535a3d35590bb3ba"
+            "url": "https://github.com/simplex-chat/simplex-chat/releases/download/v6.3.2/simplex-desktop-windows-x86_64.msi",
+            "hash": "5262e0c26a152014497fd6390b613a26a43184998ce9bdfa02f0df32343db4ef"
         }
     },
     "shortcuts": [
