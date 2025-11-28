@@ -38,7 +38,7 @@
         "}",
         "'digikamrc', 'digikam_systemrc' | ForEach-Object {",
         "    if (-not (Test-Path \"$Env:LocalAppData\\$_\")) {",
-        "        Move-Item \"$persist_dir\\$_\" \"$Env:LocalAppData\\$_\"",
+        "        Move-Item \"$persist_dir\\$_\" \"$Env:LocalAppData\\$_\" 2>$null",
         "    }",
         "}"
     ],
