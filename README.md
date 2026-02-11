@@ -1,6 +1,5 @@
 # Scoop Apps by ltguillaume
 
-<!-- Uncomment the following line after replacing placeholders -->
 [![Tests](https://github.com/ltguillaume/schep/actions/workflows/ci.yml/badge.svg)](https://github.com/ltguillaume/schep/actions/workflows/ci.yml) [![Excavator](https://github.com/ltguillaume/schep/actions/workflows/excavator.yml/badge.svg)](https://github.com/ltguillaume/schep/actions/workflows/excavator.yml)
 
 A bucket for [Scoop](https://scoop.sh) with custom(ized) manifests for increased portability, specific application flavors or otherwise missing applications.
