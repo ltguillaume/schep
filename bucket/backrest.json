@@ -32,7 +32,7 @@
         "    $path = \"$persist_dir\\config.json\"",
         "    Set-EnvVar -Name BACKREST_CONFIG -Value $path -Global:$global",
         "    $Env:BACKREST_CONFIG = $path",
-        "    Write-Host \"Environment variable 'BACKREST_CONFIG' set to '$path'\"",
+        "    Write-Host \"`nEnvironment variable 'BACKREST_CONFIG' set to '$path'\"",
         "}",
         "$current_data = Get-EnvVar -Name BACKREST_DATA -Global:$global",
         "If ($null -eq $current_data) {",
