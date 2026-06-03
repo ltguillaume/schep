@@ -1,4 +1,5 @@
 {
+    "##": "ltguillaume/schep",
     "version": "1.13.0",
     "description": "Web UI and orchestrator for restic backup. Portable version with Start Menu shortcut to Backrest Tray.",
     "homepage": "https://github.com/garethgeorge/backrest",

@@ -1,0 +1,49 @@
+{
+    "##": "ltguillaume/schep",
+    "version": "2026.4.30",
+    "description": "Soulseek is an ad-free, spyware free, just plain free file sharing network. Portable.",
+    "homepage": "https://www.slsknet.org",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://www.slsknet.org/news/node/682"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://f004.backblazeb2.com/file/SoulseekQt/SoulseekQt-2026-4-30-64bit.exe",
+            "hash": "4ba32e37bbd804ee69a88af018c3b9b49dd1bf772b65ad7c268718d0ed93eb29"
+        }
+    },
+    "innosetup": true,
+    "bin": "SoulseekQt.exe",
+    "shortcuts": [
+        [
+            "SoulseekQt.exe",
+            "SoulseekQt"
+        ]
+    ],
+    "post_install": [
+        "if (-not (Test-Path \"$Env:LocalAppData\\SoulseekQt\\*\")) {",
+        "    Remove-Item \"$Env:LocalAppData\\SoulseekQt\" 2>$null",
+        "    if (-not (Test-Path \"$persist_dir\")) {",
+        "        New-Item -ItemType \"directory\" -Path \"$persist_dir\" >$null",
+        "    }",
+        "    New-DirectoryJunction \"$Env:LocalAppData\\SoulseekQt\" \"$persist_dir\" >$null",
+        "}"
+    ],
+    "pre_uninstall": [
+        "$SoulseekQt_data = Get-Item \"$Env:LocalAppData\\SoulseekQt\"",
+        "if (\"$($SoulseekQt_data.Target)\" -eq \"$persist_dir\") { $SoulseekQt_data.Delete() }"
+    ],
+    "checkver": {
+        "url": "https://www.slsknet.org/news/node/1",
+        "regex": "SoulseekQt-(\\d+)-(\\d+)-(\\d+(?:-\\d+)?)-64bit",
+        "replace": "${1}.${2}.${3}"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://f004.backblazeb2.com/file/SoulseekQt/SoulseekQt-$dashVersion-64bit.exe"
+            }
+        }
+    }
+}

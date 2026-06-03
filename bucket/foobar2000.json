@@ -1,4 +1,5 @@
 {
+    "##": "ltguillaume/schep",
     "version": "2.25.9",
     "description": "An advanced freeware audio player for the Windows platform. Uses junction in AppData instead of portable mode, so file associations work.",
     "homepage": "https://www.foobar2000.org/",
