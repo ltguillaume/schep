@@ -1,0 +1,86 @@
+{
+    "##": "ltguillaume/schep",
+    "version": "1.17.7",
+    "description": "An enhanced edition of Sandboxie that provides sandbox-based application isolation on Windows with additional features and a modern interface. Portable.",
+    "homepage": "https://sandboxie-plus.com",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://github.com/sandboxie-plus/Sandboxie/blob/HEAD/LICENSE.Plus"
+    },
+    "notes": [
+        "If RamDisk or Encrypted Sandboxes are required, the ImDisk driver must be installed.",
+        "",
+        "For command-line usage, see: https://sandboxie-plus.com/sandboxie/startcommandline/.",
+        "Please note that `sandboxie-start` should be used instead of the `start` command mentioned in the documentation."
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/v1.17.7/Sandboxie-Plus-x64-v1.17.7.exe",
+            "hash": "14f2066a62c3f2952a3cdceffa8446e8c20d1f425d53ab86a19e52c99e282ed0"
+        },
+        "arm64": {
+            "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/v1.17.7/Sandboxie-Plus-ARM64-v1.17.7.exe",
+            "hash": "3114964c57843f3f9321a8e514e8efbe29e0575289352e1424fbeaa3e9c5b2c5"
+        }
+    },
+    "installer": {
+        "script": [
+            "$args_list = @('/currentuser', '/portable=1', '/verysilent', \"/dir=`\"$dir`\"\")",
+            "Start-Process -FilePath \"$dir\\$fname\" -ArgumentList $args_list -WindowStyle 'Hidden' -Wait"
+        ]
+    },
+    "bin": [
+        [
+            "start.exe",
+            "sandboxie-start"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "SandMan.exe",
+            "Sandboxie-Plus"
+        ]
+    ],
+    "pre_install": [
+        "$contents = @{",
+        "    # Create a default Sandboxie-Plus.ini that will skip update checks.",
+        "    'Sandboxie-Plus.ini' = '[Options]\nPortableStart=1\nPortableStop=1\nCheckForAddons=0\nCheckForUpdates=0\nDownloadUpdates=0'",
+        "}",
+        "# Hardlinks won't work properly here to persist files, because this app creates a new file instead of writing to the existing one.",
+        "# Please keep the file list the same in both pre_install and post_install scripts.",
+        "'Sandboxie.ini', 'Sandboxie-Plus.ini', 'SbieSettings.user.ini' | ForEach-Object {",
+        "    if (Test-Path \"$persist_dir\\$_\") {",
+        "        Copy-Item \"$persist_dir\\$_\" \"$dir\\$_\" -Force",
+        "    } else {",
+        "        Set-Content -Path \"$dir\\$_\" -Value $contents[$_]",
+        "    }",
+        "}"
+    ],
+    "pre_uninstall": [
+        "# Hardlinks won't work properly here to persist files, because this app creates a new file instead of writing to the existing one.",
+        "# Please keep the file list the same in both pre_install and post_install scripts.",
+        "'Sandboxie.ini', 'Sandboxie-Plus.ini', 'SbieSettings.user.ini' | ForEach-Object {",
+        "    if (Test-Path \"$dir\\$_\") {",
+        "        Copy-Item \"$dir\\$_\" \"$persist_dir\\$_\" -Force",
+        "    }",
+        "}"
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repositories/254327261/releases/latest",
+        "jsonpath": "$.assets[?(@.name =~ /Plus/i)].browser_download_url",
+        "regex": "(?i)download/(?<tag>[^/]+)/Sandboxie-Plus-(?:x|ARM)64-v([\\d.]+)\\.exe"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/$matchTag/Sandboxie-Plus-x64-v$version.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/$matchTag/Sandboxie-Plus-ARM64-v$version.exe"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/sha256-checksums.txt"
+        }
+    }
+}
