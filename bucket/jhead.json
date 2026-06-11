@@ -1,0 +1,25 @@
+{
+    "##": "ltguillaume/schep",
+    "version": "3.3-5007491",
+    "description": "JPEG Exif header manipulation tool. Built weekly from master.",
+    "homepage": "https://github.com/Matthias-Wandel/jhead",
+    "license": "Public Domain",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/ltguillaume/jhead-win64/releases/latest/download/jhead.exe",
+            "hash": "6e9518c846ea2a394e920b73cd27fc71083d778ce68b0cb4b9d1aeea38126381"
+        }
+    },
+    "bin": "jhead.exe",
+    "checkver": {
+        "github": "https://github.com/ltguillaume/jhead-win64",
+        "regex": "/releases/tag/([\\w.-]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/ltguillaume/jhead-win64/releases/latest/download/jhead.exe"
+            }
+        }
+    }
+}
