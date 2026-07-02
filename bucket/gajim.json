@@ -30,7 +30,7 @@
     },
     "checkver": {
         "url": "https://dev.gajim.org/api/v4/projects/30/releases/permalink/latest",
-        "jsonpath": "$.tag_name"
+        "jsonpath": "$.name"
     },
     "autoupdate": {
         "architecture": {
