@@ -23,24 +23,6 @@
             "hash": "f76c0645eae9ee41d0c50d7e2950e0aca50bf5b0448872955aaf73a2adbf9ac3"
         }
     },
-    "installer": {
-        "script": [
-            "$args_list = @('/currentuser', '/portable=1', '/verysilent', \"/dir=`\"$dir`\"\")",
-            "Start-Process -FilePath \"$dir\\$fname\" -ArgumentList $args_list -WindowStyle 'Hidden' -Wait"
-        ]
-    },
-    "bin": [
-        [
-            "start.exe",
-            "sandboxie-start"
-        ]
-    ],
-    "shortcuts": [
-        [
-            "SandMan.exe",
-            "Sandboxie-Plus"
-        ]
-    ],
     "pre_install": [
         "$contents = @{",
         "    # Create a default Sandboxie-Plus.ini that will skip update checks.",
@@ -60,6 +42,24 @@ DownloadUpdates=0'",
         "        Set-Content -Path \"$dir\\$_\" -Value $contents[$_]",
         "    }",
         "}"
+    ],
+    "installer": {
+        "script": [
+            "$args_list = @('/currentuser', '/portable=1', '/verysilent', \"/dir=`\"$dir`\"\")",
+            "Start-Process -FilePath \"$dir\\$fname\" -ArgumentList $args_list -WindowStyle 'Hidden' -Wait"
+        ]
+    },
+    "bin": [
+        [
+            "start.exe",
+            "sandboxie-start"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "SandMan.exe",
+            "Sandboxie-Plus"
+        ]
     ],
     "pre_uninstall": [
         "# Hardlinks won't work properly here to persist files, because this app creates a new file instead of writing to the existing one.",
