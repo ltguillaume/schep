@@ -4,9 +4,7 @@
     "description": "Professional creative software, free for everyone. Portable.",
     "homepage": "https://www.affinity.studio",
     "license": "Proprietary",
-    "suggest": {
-        "Visual C++ 2022 runtimes": "vcredist2022"
-    },
+    "notes": "- If starting Affinity shows a software exception, install extras/vcredist2022.\n- If View Help remains empty, you may need to install extras/webview2.",
     "architecture": {
         "64bit": {
             "url": "https://downloads.affinity.studio/Affinity%20x64.msix#/dl.7z",
