@@ -11,6 +11,9 @@
             "hash": "242ccb1f2219f15355c4e2741c90ababe57d02c820022340fb53bb767915442e"
         }
     },
+    "installer": {
+        "script": "Rename-Item \"$dir\\avidemux.exe\" \"avidemux_portable.exe\" -ErrorAction SilentlyContinue"
+    },
     "bin": [
         [
             "avidemux_cli.exe",
