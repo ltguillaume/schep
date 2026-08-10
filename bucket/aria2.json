@@ -1,0 +1,25 @@
+{
+    "##": "ltguillaume/schep",
+    "version": "2.5.5",
+    "description": "Use the maintained fork Aria2-Next as drop-in replacement for Aria2.",
+    "homepage": "https://github.com/AnInsomniacy/aria2-next",
+    "license": "GPL-2.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/AnInsomniacy/aria2-next/releases/download/v2.5.5/aria2-next-2.5.5-windows-x86_64.exe#/aria2-next.exe",
+            "hash": "554f2f81ca53731dc9e01710cfb16081a34759f3276ff16eb4b12656c1b6e5b9"
+        }
+    },
+    "installer": {
+        "script": "Rename-Item \"$dir\\aria2-next.exe\" aria2c.exe"
+    },
+    "bin": "aria2c.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/AnInsomniacy/aria2-next/releases/download/v$version/aria2-next-$version-windows-x86_64.exe#/aria2-next.exe"
+            }
+        }
+    }
+}
