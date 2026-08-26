@@ -1,24 +1,28 @@
 {
     "##": "ltguillaume/schep",
-    "version": "2.6.2",
+    "version": "2.6.4",
     "description": "Use the maintained fork Aria2-Next as drop-in replacement for Aria2.",
     "homepage": "https://github.com/AnInsomniacy/aria2-next",
     "license": "GPL-2.0-only",
     "architecture": {
+        "arm64": {
+            "url": "https://github.com/AnInsomniacy/aria2-next/releases/download/v2.6.4/aria2-next-2.6.4-windows-arm64.exe#/aria2c.exe",
+            "hash": "4aa9ad9b04c6c6b3174b93b00c2c57b85533e7b7d2c90a39db689e311266ccfc"
+        },
         "64bit": {
-            "url": "https://github.com/AnInsomniacy/aria2-next/releases/download/v2.6.2/aria2-next-2.6.2-windows-x86_64.exe#/aria2-next.exe",
-            "hash": "52cae6f741af4aa6a4a7dc04fb3dd69098bc1fa7d5aef9459f8db2bd07477187"
+            "url": "https://github.com/AnInsomniacy/aria2-next/releases/download/v2.6.4/aria2-next-2.6.4-windows-x86_64.exe#/aria2c.exe",
+            "hash": "3fae605f12062828af2470ba9b8c315e08b2a5c0749974830e895689360e564e"
         }
-    },
-    "installer": {
-        "script": "Rename-Item \"$dir\\aria2-next.exe\" aria2c.exe"
     },
     "bin": "aria2c.exe",
     "checkver": "github",
     "autoupdate": {
         "architecture": {
+            "arm64": {
+                "url": "https://github.com/AnInsomniacy/aria2-next/releases/download/v$version/aria2-next-$version-windows-arm64.exe#/aria2c.exe"
+            },
             "64bit": {
-                "url": "https://github.com/AnInsomniacy/aria2-next/releases/download/v$version/aria2-next-$version-windows-x86_64.exe#/aria2-next.exe"
+                "url": "https://github.com/AnInsomniacy/aria2-next/releases/download/v$version/aria2-next-$version-windows-x86_64.exe#/aria2c.exe"
             }
         }
     }
