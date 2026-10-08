@@ -1,17 +1,17 @@
 {
     "##": "ltguillaume/schep",
-    "version": "157.0-1",
+    "version": "157.0.1-1",
     "description": "A fork of Firefox, focused on privacy, security and freedom. This variant does not use the portable launcher and makes sure the Scoop profile is used by default.",
     "homepage": "https://librewolf.net",
     "license": "MPL-2.0",
     "notes": "After installation, the profile manager will be run to choose the right default profile.",
     "architecture": {
         "64bit": {
-            "url": "https://dl.librewolf.net/librewolf/157.0-1/librewolf-157.0-1-windows-x86_64-portable.zip",
-            "hash": "c74dd8f98c74e28dcbcb1b562f3336e3f3807bed2f31584bab7fc38f3a169cba"
+            "url": "https://dl.librewolf.net/librewolf/157.0.1-1/librewolf-157.0.1-1-windows-x86_64-portable.zip",
+            "hash": "6b9f851f956c832135479105683571a4a6fa49312f21a47a9bd77e70dac6ebcd"
         }
     },
-    "extract_dir": "librewolf-157.0-1\\LibreWolf",
+    "extract_dir": "librewolf-157.0.1-1\\LibreWolf",
     "post_install": [
         "$Addition = \"$persist_dir\\addition\"",
         "if (Test-Path $Addition) {",
