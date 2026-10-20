@@ -11,6 +11,10 @@
         "64bit": {
             "url": "https://github.com/Euro-Office/DesktopEditors/releases/download/v9.3.5-2/DesktopEditors-9.3.5.0-x64.zip",
             "hash": "0f2dcdb72b5470cd405506ba7ebf615b3a7343a544724525f70ebafaa79a86db"
+        },
+        "arm64": {
+            "url": "https://github.com/Euro-Office/DesktopEditors/releases/download/v9.3.5-2/DesktopEditors-9.3.5.0-arm64.zip",
+            "hash": "511421d1d4f84e21d4bdd0fd15630264d424319b6f190d3b00840db787b4f5fe"
         }
     },
     "bin": "DesktopEditors.exe",
@@ -31,7 +35,10 @@
     ],
     "pre_uninstall": [
         "$Euro-Office_data = Get-Item \"$Env:LocalAppData\\Euro-Office\"",
-        "if (\"$($Euro-Office_data.Target)\" -eq \"$persist_dir\") { $Euro-Office_data.Delete() }"
+        "if (\"$($Euro-Office_data.Target)\" -eq \"$persist_dir\") { $Euro-Office_data.Delete() }",
+        "if ($cmd -eq 'uninstall') {",
+        "    Remove-Item \"HKCU:\\Software\\Euro-Office\" -Force -Recurse",
+        "}"
     ],
     "checkver": {
         "github": "https://api.github.com/repos/Euro-Office/DesktopEditors/releases",
@@ -42,6 +49,9 @@
         "architecture": {
             "64bit": {
                 "url": "https://github.com/Euro-Office/DesktopEditors/releases/download/v$version/DesktopEditors-$matchFileVersion-x64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/Euro-Office/DesktopEditors/releases/download/v$version/DesktopEditors-$matchFileVersion-arm64.zip"
             }
         }
     }
