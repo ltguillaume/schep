@@ -43,15 +43,15 @@
     "checkver": {
         "github": "https://api.github.com/repos/Euro-Office/DesktopEditors/releases",
         "jsonpath": "$[*].assets[*].browser_download_url",
-        "regex": "v([\\d.-]+)/DesktopEditors-(?<fileVersion>[\\d.]+)-x64\\.zip"
+        "regex": "v([\\d.-]+)/DesktopEditors-(?<fileversion>[\\d.]+)-x64\\.zip"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Euro-Office/DesktopEditors/releases/download/v$version/DesktopEditors-$matchFileVersion-x64.zip"
+                "url": "https://github.com/Euro-Office/DesktopEditors/releases/download/v$version/DesktopEditors-$matchFileversion-x64.zip"
             },
             "arm64": {
-                "url": "https://github.com/Euro-Office/DesktopEditors/releases/download/v$version/DesktopEditors-$matchFileVersion-arm64.zip"
+                "url": "https://github.com/Euro-Office/DesktopEditors/releases/download/v$version/DesktopEditors-$matchFileversion-arm64.zip"
             }
         }
     }
