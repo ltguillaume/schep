@@ -34,8 +34,8 @@
         "}"
     ],
     "pre_uninstall": [
-        "$Euro-Office_data = Get-Item \"$Env:LocalAppData\\Euro-Office\"",
-        "if (\"$($Euro-Office_data.Target)\" -eq \"$persist_dir\") { $Euro-Office_data.Delete() }",
+        "$data = Get-Item \"$Env:LocalAppData\\Euro-Office\"",
+        "if (\"$($data.Target)\" -eq \"$persist_dir\") { $data.Delete() }",
         "if ($cmd -eq 'uninstall') {",
         "    Remove-Item \"HKCU:\\Software\\Euro-Office\" -Force -Recurse",
         "}"
