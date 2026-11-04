@@ -1,7 +1,7 @@
 {
     "##": "ltguillaume/schep",
     "version": "3.3-5007491",
-    "description": "JPEG Exif header manipulation tool. Built weekly from master.",
+    "description": "JPEG Exif header manipulation tool. Built monthly from master.",
     "homepage": "https://github.com/Matthias-Wandel/jhead",
     "license": "Public Domain",
     "architecture": {
@@ -12,8 +12,7 @@
     },
     "bin": "jhead.exe",
     "checkver": {
-        "github": "https://github.com/ltguillaume/jhead-win64",
-        "regex": "/releases/tag/([\\w.-]+)"
+        "github": "https://github.com/ltguillaume/jhead-win64"
     },
     "autoupdate": {
         "architecture": {
